@@ -17,12 +17,23 @@ These instructions will help you get your Nintendo Switch's SD cards setup prope
 
 0. Read [Plailect's Switch Hacks Guide](https://switch.hacks.guide) to understand what new files you will be placing on your Nintendo Switch's SD card
 1. Insert your SD card into your device with the git tools
-2. Open a terminal and navigate to the SD card's root filesystem
+2. Open a terminal and navigate to the root of your SD card
 3. Run the following commands:
+- Initialize an empty git repository
 ```
 $ git init
+```
+- Set the origin of the repository to Switch-SD
+```
 $ git remote add origin https://github.com/JoshuaDoes/Switch-SD.git
-$ git pull
+```
+- Pull from the origin's master branch
+```
+$ git pull origin master
+```
+- Set the repository's upstream to the origin's master branch
+```
+$ git branch --set-upstream-to=origin/master
 ```
 4. Eject your SD card from your device and insert it into your Nintendo Switch
 5. Profit!
@@ -31,8 +42,9 @@ $ git pull
 
 0. Read [Plailect's Switch Hacks Guide](https://switch.hacks.guide) to understand what new files you will be placing on your Nintendo Switch's SD card
 1. Insert your SD card into your device with the git tools
-2. Open a terminal and navigate to the SD card's root filesystem
+2. Open a terminal and navigate to the root of your SD card
 3. Run the following command:
+- Pull the latest changes from the Switch-SD repository
 ```
 $ git pull
 ```
